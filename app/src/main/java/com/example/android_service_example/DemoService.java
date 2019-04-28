@@ -9,7 +9,6 @@ import org.jetbrains.annotations.Nullable;
 
 public class DemoService extends Service {
 
-
     @Nullable
     @Override
     public IBinder onBind(Intent intent) {

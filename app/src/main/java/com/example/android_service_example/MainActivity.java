@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         buttonStart = (Button) findViewById(R.id.button);
         buttonStop = (Button) findViewById(R.id.button2);
 
@@ -28,13 +27,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
         buttonStop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 stopService(new Intent(MainActivity.this, DemoService.class));
             }
         });
-
     }
 }
